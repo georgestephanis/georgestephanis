@@ -7,17 +7,50 @@
     "github": "https://github.com/georgestephanis"
   },
   "categories": [
-    { "id": "web", "name": "Web Apps" },
-    { "id": "cli", "name": "CLI Apps" },
-    { "id": "macos", "name": "macOS Apps" },
-    { "id": "android", "name": "Android Apps" },
-    { "id": "developer-tools", "name": "Developer Tools" },
-    { "id": "utilities", "name": "Utilities" },
-    { "id": "productivity", "name": "Productivity" },
-    { "id": "graphics-design", "name": "Graphics & Design" },
-    { "id": "photo-video", "name": "Photo & Video" },
-    { "id": "entertainment", "name": "Entertainment" },
-    { "id": "games", "name": "Games" }
+    {
+      "id": "web",
+      "name": "Web Apps"
+    },
+    {
+      "id": "cli",
+      "name": "CLI Apps"
+    },
+    {
+      "id": "macos",
+      "name": "macOS Apps"
+    },
+    {
+      "id": "android",
+      "name": "Android Apps"
+    },
+    {
+      "id": "developer-tools",
+      "name": "Developer Tools"
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities"
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity"
+    },
+    {
+      "id": "graphics-design",
+      "name": "Graphics & Design"
+    },
+    {
+      "id": "photo-video",
+      "name": "Photo & Video"
+    },
+    {
+      "id": "entertainment",
+      "name": "Entertainment"
+    },
+    {
+      "id": "games",
+      "name": "Games"
+    }
   ],
   "apps": [
     {
@@ -28,7 +61,10 @@
       "longDescription": "Diff Leppard reviews uncommitted or staged changes, or a GitHub pull request, using any server that speaks the OpenAI chat completions API. Your code goes only to your own server. It can post the result as a real PR review with inline comments on the changed lines. The VS Code extension, CLI, gh extension, GitHub Action, pre-commit hook, Neovim plugin, MCP server and Claude Code plugin all share one review engine and settings.",
       "icon": "https://raw.githubusercontent.com/georgestephanis/diff-leppard/main/media/icon.png",
       "iconEmoji": "🐆",
-      "category": ["developer-tools", "cli"],
+      "category": [
+        "developer-tools",
+        "cli"
+      ],
       "platform": "Node.js",
       "price": "Free",
       "github": "https://github.com/georgestephanis/diff-leppard",
@@ -36,7 +72,7 @@
       "language": "TypeScript",
       "installCommand": "npm install -g https://github.com/georgestephanis/diff-leppard/releases/latest/download/diff-leppard.tgz",
       "downloadUrl": "https://github.com/georgestephanis/diff-leppard/releases/latest",
-      "requirements": "Node.js and an OpenAI-compatible model server",
+      "requirements": "Node.js 20+ and an OpenAI-compatible model server",
       "features": [
         "Works with vLLM, Ollama, LM Studio, llama.cpp, SGLang, LocalAI and other OpenAI-compatible servers",
         "Posts real GitHub PR reviews with inline comments",
@@ -56,16 +92,19 @@
       "description": "An Android TV / Google TV app for video, music and photos straight from SMB or WebDAV shares and USB drives.",
       "longDescription": "NAS Player browses SMB 2/3 and WebDAV shares (TrueNAS, Synology, QNAP, Samba, Windows) and USB drives, and plays everything in-app. ExoPlayer handles hardware decoding, HDR and surround passthrough, and libVLC takes over automatically for formats ExoPlayer can't open. It generates and caches thumbnails, reads album tags, remembers resume positions, and picks up sidecar subtitles.",
       "iconEmoji": "📺",
-      "category": ["android", "entertainment"],
+      "category": [
+        "android",
+        "entertainment"
+      ],
       "platform": "Android TV",
       "price": "Free",
       "github": "https://github.com/georgestephanis/nas-player",
-      "homepage": null,
+      "homepage": "https://github.com/georgestephanis/nas-player/releases/latest",
       "language": "Kotlin",
       "downloadUrl": "https://github.com/georgestephanis/nas-player/releases/latest",
-      "requirements": "Android TV or Google TV device",
+      "requirements": "Android TV or Google TV, Android 8.0 or later",
       "features": [
-        "SMB 2/3 and WebDAV, with mDNS discovery of servers on your network",
+        "SMB 2/3 and WebDAV, with mDNS discovery of SMB servers on your network",
         "USB drive support",
         "ExoPlayer with automatic libVLC fallback for unusual formats",
         "Continue watching, resume positions and watched markers",
@@ -84,7 +123,10 @@
       "description": "Draw rooms, doors and windows to scale, drag furniture around, and save the plan as an SVG. Nothing is uploaded.",
       "longDescription": "A floor-plan editor that runs entirely in the browser. Draw rooms, doors and windows with real measurements, drag furniture around, measure anything, and save the result as an SVG that you can open again later or view in any browser or vector editor.",
       "iconEmoji": "🏠",
-      "category": ["web", "graphics-design"],
+      "category": [
+        "web",
+        "graphics-design"
+      ],
       "platform": "Web",
       "price": "Free",
       "github": "https://github.com/georgestephanis/home-designer",
@@ -105,11 +147,14 @@
       "id": "deltascribe",
       "name": "DeltaScribe Studio",
       "subtitle": "Subtitle and lyric timing, in your browser",
-      "description": "Align subtitles and lyrics to audio or video entirely client-side. No media or subtitle files are uploaded.",
-      "longDescription": "DeltaScribe is a client-side subtitle and lyric timing studio. Load a video or audio file with SRT, WebVTT or TTML subtitles, adjust timing against the waveform, and export. Workspaces can be pre-filled from URL parameters, with an optional webhook to post the finished result back.",
+      "description": "Align subtitles and lyrics to audio or video in the browser. Your media and subtitle files stay on your machine.",
+      "longDescription": "DeltaScribe is a client-side subtitle and lyric timing studio. Load a video or audio file with SRT, WebVTT or TTML subtitles, retime cues while it plays, and export. Your files aren't uploaded anywhere unless you opt into a feature that sends data out: Chrome's speech recognition, an OpenAI-compatible AI endpoint you configure, or a submit webhook passed in the URL.",
       "icon": "https://raw.githubusercontent.com/georgestephanis/DeltaScribe/trunk/src/assets/delta-scribe-icon.svg",
       "iconEmoji": "🎬",
-      "category": ["web", "photo-video"],
+      "category": [
+        "web",
+        "photo-video"
+      ],
       "platform": "Web",
       "price": "Free",
       "github": "https://github.com/georgestephanis/DeltaScribe",
@@ -118,7 +163,7 @@
       "features": [
         "SRT, WebVTT and TTML import and export",
         "Create new subtitles from scratch",
-        "Everything stays in the browser",
+        "Media and subtitle files stay in the browser",
         "Pre-fill media and subtitles from URL parameters",
         "Optional webhook to submit finished timing"
       ]
@@ -131,7 +176,10 @@
       "longDescription": "A browser-only tool for manually digitizing a two-sided circuit board. Upload front and back photos, trace copper paths on each side by clicking points, mark the vias and holes that pass through the board, and export everything as one self-contained SVG that other software can parse. Images never leave the browser.",
       "icon": "https://raw.githubusercontent.com/georgestephanis/circuit-tracer/trunk/public/favicon.svg",
       "iconEmoji": "🔌",
-      "category": ["web", "developer-tools"],
+      "category": [
+        "web",
+        "utilities"
+      ],
       "platform": "Web",
       "price": "Free",
       "github": "https://github.com/georgestephanis/circuit-tracer",
@@ -152,7 +200,10 @@
       "description": "A guided D&D 5th Edition character creator and level-up sheet using SRD 5.1 and 5.2.1 content. Runs in the browser.",
       "longDescription": "A responsive, client-side app for creating, managing, leveling up and printing Dungeons & Dragons 5th Edition characters, using the official System Reference Document content (SRD 5.1 and SRD 5.2.1) under CC BY 4.0. Keep a roster of characters, track hit points, spells and features, and print a tabletop sheet.",
       "iconEmoji": "⚔️",
-      "category": ["web", "games"],
+      "category": [
+        "web",
+        "games"
+      ],
       "platform": "Web",
       "price": "Free",
       "github": "https://github.com/georgestephanis/dnd-char-sheet-creator",
@@ -177,14 +228,18 @@
       "longDescription": "gitslim scans a directory tree for git repositories and lists each one's .git size, when it was last committed to, and when its working tree last changed. Mark the repos you want to slim and press S to convert them to shallow clones in place. Repos with unpushed commits are protected. It's a single bash script that runs on the bash 3.2 that ships with macOS.",
       "icon": "https://raw.githubusercontent.com/georgestephanis/gitslim/trunk/brand/icon/gitslim-icon-512.png",
       "iconEmoji": "✂️",
-      "category": ["cli", "developer-tools", "utilities"],
+      "category": [
+        "cli",
+        "developer-tools",
+        "utilities"
+      ],
       "platform": "CLI",
       "price": "Free",
       "github": "https://github.com/georgestephanis/gitslim",
       "homepage": null,
       "language": "Shell",
-      "installCommand": "curl -fsSL https://raw.githubusercontent.com/georgestephanis/gitslim/trunk/gitslim -o /usr/local/bin/gitslim && chmod +x /usr/local/bin/gitslim",
-      "requirements": "bash 3.0+ and git",
+      "installCommand": "mkdir -p ~/.local/bin && curl -fsSL https://raw.githubusercontent.com/georgestephanis/gitslim/trunk/gitslim -o ~/.local/bin/gitslim && chmod +x ~/.local/bin/gitslim",
+      "requirements": "bash 3.0+ and git; ~/.local/bin on your PATH",
       "features": [
         "Finds every git repo under a folder",
         "Shows .git size and last commit and change times",
@@ -204,12 +259,19 @@
       "longDescription": "Drag files or screenshots onto the WordUp menu bar icon to upload them to your own WordPress site's media library, and the URL is copied to your clipboard. It signs in with WordPress Application Passwords, stores the token locally, and keeps a searchable log of API requests.",
       "icon": "https://raw.githubusercontent.com/georgestephanis/WordUp/trunk/docs/icon.png",
       "iconEmoji": "⬆️",
-      "iconStyle": { "scale": 1.15, "objectFit": "cover", "borderRadius": "22%" },
-      "category": ["macos", "productivity"],
+      "iconStyle": {
+        "scale": 1.15,
+        "objectFit": "cover",
+        "borderRadius": "22%"
+      },
+      "category": [
+        "macos",
+        "productivity"
+      ],
       "platform": "macOS",
       "price": "Free",
       "github": "https://github.com/georgestephanis/WordUp",
-      "homepage": null,
+      "homepage": "https://github.com/georgestephanis/WordUp/releases/latest",
       "language": "Swift",
       "downloadUrl": "https://github.com/georgestephanis/WordUp/releases/latest",
       "requirements": "macOS 15.6 or later and a self-hosted WordPress site",
