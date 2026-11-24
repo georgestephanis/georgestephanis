@@ -50,6 +50,10 @@
     {
       "id": "games",
       "name": "Games"
+    },
+    {
+      "id": "business",
+      "name": "Business"
     }
   ],
   "apps": [
@@ -280,6 +284,39 @@
         "Uploaded media URL copied to the clipboard",
         "Signs in with WordPress Application Passwords",
         "Searchable API request log"
+      ]
+    },
+    {
+      "id": "greenroom",
+      "name": "greenroom",
+      "subtitle": "Self-hosted home for what your team's AI agents make",
+      "description": "A small self-hosted server where a team publishes the reports, dashboards and prototypes their agents build: get a URL, keep every version, roll back in a click.",
+      "longDescription": "greenroom gives a team of 3 to 10 people one place to host the static things their LLM agents produce. Publish a folder (from the dashboard or through MCP) and it is served at /s/{slug}/, versioned over a content-addressed blob store, with history, diffs and one-click rollback. Agents connect over MCP with OAuth and ask a team member for scoped access, and the history shows who did what. Each space can be team-only, shared by link (with expiry, passwords, use limits and view counts), or public. All state is one SQLite file plus a blob folder, with no native dependencies, and it idles at well under 100 MB of RAM.",
+      "iconEmoji": "🎭",
+      "category": [
+        "developer-tools",
+        "productivity",
+        "business"
+      ],
+      "platform": "Node.js",
+      "price": "Free",
+      "github": "https://github.com/georgestephanis/greenroom",
+      "homepage": "https://georgestephanis.github.io/greenroom/",
+      "language": "JavaScript",
+      "installCommand": "git clone https://github.com/georgestephanis/greenroom.git && cd greenroom && node bin/greenroom.js serve",
+      "requirements": "Node.js 24+; a TLS-terminating proxy for production use",
+      "features": [
+        "Publish a folder of static files and get a URL",
+        "Every publish is an immutable version, with diffs and one-click rollback",
+        "MCP endpoint with OAuth and scoped, revocable access for agents",
+        "Team-only, share-link (expiry, password, use limits, view counts) or public spaces",
+        "Export and import with full history",
+        "One SQLite file plus a blob folder, with no native dependencies"
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/georgestephanis/greenroom/main/docs/screenshots/spaces.png",
+        "https://raw.githubusercontent.com/georgestephanis/greenroom/main/docs/screenshots/space.png",
+        "https://raw.githubusercontent.com/georgestephanis/greenroom/main/docs/screenshots/account-dark.png"
       ]
     }
   ]
