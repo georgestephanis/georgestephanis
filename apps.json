@@ -318,6 +318,33 @@
         "https://raw.githubusercontent.com/georgestephanis/greenroom/main/docs/screenshots/space.png",
         "https://raw.githubusercontent.com/georgestephanis/greenroom/main/docs/screenshots/account-dark.png"
       ]
+    },
+    {
+      "id": "plex-dvr-autopilot",
+      "name": "plex-dvr-autopilot",
+      "subtitle": "Plex DVR records the good movies for you",
+      "description": "Watches your Plex Live TV guide and creates recording rules for movies you don't have yet, chosen by IMDb rating and the genres your library is full of.",
+      "longDescription": "plex-dvr-autopilot runs once a day against a Plex Media Server with Live TV & DVR set up. It skips movies already in your library or already scheduled, looks up each remaining movie's IMDb rating and vote count from IMDb's public datasets (no API key needed), and creates one-shot recording rules for those that clear your tiers: acclaimed films in any genre, or solid ones in the genres you like, which it can work out from your library. Delete a rule it made and it won't suggest that movie again. It also tidies up rules that can't do anything anymore. Dry run by default; runs on the Plex machine, on any computer on your network, or in Docker on a NAS.",
+      "iconEmoji": "📼",
+      "category": [
+        "cli",
+        "entertainment",
+        "utilities"
+      ],
+      "platform": "Python / Docker",
+      "price": "Free",
+      "github": "https://github.com/georgestephanis/plex-dvr-autopilot",
+      "language": "Python",
+      "installCommand": "pipx install git+https://github.com/georgestephanis/plex-dvr-autopilot",
+      "requirements": "Plex Media Server with Live TV & DVR (Plex Pass) and a tuner; Python 3.9+ or Docker",
+      "features": [
+        "Records movies from the guide that aren't already in your library",
+        "Picks by IMDb rating and vote count, in tiers you can configure",
+        "Liked genres worked out from your own library, or listed by hand",
+        "Remembers the picks you turn down",
+        "Cleans up recording rules that have nothing left to do",
+        "Dry run by default; Docker image for amd64 and arm64"
+      ]
     }
   ]
 }
